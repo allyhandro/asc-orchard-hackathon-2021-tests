@@ -6,11 +6,24 @@ const newSingle = (single) => {
 };
 
 const eresBadBunny = (name) => {
-  // insert code
-};
+  if (name == "Bad Bunny") {
+    return true
+  } else {
+    return false
+  }
+}
 
 const areYouLil = (name) => {
-  // insert code
+  var Name = artistName.split(" ");
+  
+  var firstName = Name[0]
+  
+  if (firstName == "lil") {
+    return true 
+  }
+  else {
+    return false 
+  }
 };
 
 const mostViewsThreeVideos = (videoOneViews, videoTwoViews, videoThreeViews) => {
