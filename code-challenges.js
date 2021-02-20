@@ -10,6 +10,7 @@ const eresBadBunny = (name) => {
 }
 
 const areYouLil = (name) => {
+  
   var Name = artistName.split(" ");
   
   var firstName = Name[0]
