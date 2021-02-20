@@ -58,7 +58,8 @@ const validateEmailWithMessage = (email) => {
 };
 
 const getInitials = (name) => {
-  // insert code
+  var afterSpace=name.indexOf(" ")+1;
+  return name.substring(0,1)+ name.substring(afterSpace,afterSpace+1); 
 };
 
 const getInitialsOneName = (name) => {
