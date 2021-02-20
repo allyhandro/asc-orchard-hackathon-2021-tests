@@ -32,7 +32,25 @@ const mostViews = (videoViews) => {
 };
 
 const validateEmail = (email) => {
-  // insert code
+  var symbolcheck = email.includes("@");
+  var endingPop = email.split(".");
+  var ending = endingPop.pop();
+  var recipient = email.split("@");
+   
+  if (symbolcheck == true) {
+       if (ending == "com" || ending == "org" || ending == "edu" || ending == "net" ) {
+    
+          if (recipient[0] != ""){
+            return "valid email";
+          } else {
+            return "invalid email" 
+          }
+        }
+
+        else {return "invalid email"}
+  } else {
+    return "invalid email"
+  }
 };
 
 const validateEmailWithMessage = (email) => {
