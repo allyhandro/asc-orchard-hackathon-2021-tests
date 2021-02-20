@@ -6,11 +6,7 @@ const newSingle = (single) => {
 };
 
 const eresBadBunny = (name) => {
-  if (name == "Bad Bunny") {
-    return true
-  } else {
-    return false
-  }
+  return name.toLowerCase() == "bad bunny"
 }
 
 const areYouLil = (name) => {
